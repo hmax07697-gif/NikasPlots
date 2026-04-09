@@ -1,0 +1,27 @@
+name: TimedPlots
+version: 1.0
+main: com.example.timedplots.TimedPlots
+api-version: 1.20
+authors: [bpmaxlancer]
+depend: [WorldGuard, FastAsyncWorldEdit]
+
+commands:
+  plot:
+    description: Main plot command
+    usage: /plot <args>
+    aliases: [plots]
+
+permissions:
+  plots.create:
+    default: true
+  plots.tp:
+    default: true
+  plots.reset:
+    default: op
+  plots.lock:
+    default: op
+  plots.unlock:
+    default: op
+  plots.bypass:
+    description: Allows building in locked plots
+    default: op
